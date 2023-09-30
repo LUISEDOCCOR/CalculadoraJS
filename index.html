@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <div class="calculadora">
+            <div class="screen">
+                <span class="now"></span>
+                <span class="back"></span>
+            </div>
+            <div class="btn">
+                <div class="col">
+                    <button onclick="push_data('%')">%</button>
+                    <button onclick="push_data('/')">/</button>
+                    <button onclick="screenClear()">c</button>
+                    <button onclick="deleteScreen()">←</button>
+                </div>
+                <div class="col">
+                    <button onclick="push_data(7)">7</button>
+                    <button onclick="push_data(8)">8</button>
+                    <button onclick="push_data(9)">9</button>
+                    <button onclick="push_data('*')">x</button>
+                </div>
+                <div class="col">
+                    <button onclick="push_data(4)">4</button>
+                    <button onclick="push_data(5)">5</button>
+                    <button onclick="push_data(6)">6</button>
+                    <button onclick="push_data('-')"> - </button>
+                </div>
+                <div class="col">
+                    <button onclick="push_data(3)">3</button>
+                    <button onclick="push_data(2)">2</button>
+                    <button onclick="push_data(1)">1</button>
+                    <button onclick="push_data('+')">+</button>
+                </div>
+                <div class="col">
+                    <button onclick="push_data(0)">0</button>
+                    <button onclick="previous()">↓</button>
+                    <button onclick="push_data('.')">.</button>
+                    <button onclick="resultado()"> = </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
